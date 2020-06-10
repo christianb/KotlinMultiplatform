@@ -30,9 +30,7 @@ kotlin {
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
     }
 
-    sourceSets["iosMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    }
+    sourceSets["iosMain"]
 }
 
 val packForXcode by tasks.creating(Sync::class) {
